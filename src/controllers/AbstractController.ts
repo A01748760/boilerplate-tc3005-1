@@ -1,5 +1,4 @@
 import { Router } from "express";
-
 export default abstract class AbstractController{
     //Atributos
     private _router: Router = Router();
@@ -16,8 +15,6 @@ export default abstract class AbstractController{
         this._prefix=prefix;
         this.initRoutes();
     }
-
-    protected abstract initRoutes():void;
-
+    protected abstract initRoutes():void
     
 }
